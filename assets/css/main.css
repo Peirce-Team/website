@@ -1809,7 +1809,7 @@ input, select, textarea {
 			width:100%;
 			aspect-ratio: 1 / 1;
 		  	object-fit: cover;
-			overflow: clip;
+			overflow: hidden;
 		  	object-position: center;
 			display: block;
 
