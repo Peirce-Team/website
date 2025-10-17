@@ -76,6 +76,73 @@ input, select, textarea {
 	appearance: none;
 }
 
+.pop-outer{
+	background-color: rgba(0,0,0,0.5);
+	position:fixed;
+}
+.pop-inner{
+	background-color: #fff;
+	padding: 3em;
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	z-index:100000;
+
+}
+
+.modalDialog {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.4);
+		backdrop-filter: blur(3px);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 4000ms ease-in;
+        -moz-transition: opacity 4000ms ease-in;
+        transition: opacity 4000ms ease-in;
+        pointer-events: none;
+    }
+
+    .modalDialog:target {
+        opacity:0.95;
+        pointer-events: auto;
+    }
+
+    .modalDialog > div {
+		font-size: 0.9em;
+		line-height: 1.05;
+		max-width: clamp(140px, 75vw, 700px);
+        position: relative;
+        margin: 20% auto;
+        padding: 15px 20px 13px 20px;
+        background: #fff;
+    }
+
+    .close {
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+    }
+
+    .close:hover { background: #00d9ff; }
+
 /* Basic */
 
 	html {
@@ -1636,6 +1703,12 @@ input, select, textarea {
 
 				.row > .col-12-mobile {
 					width: 100%;
+
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+
 				}
 
 				.row > .off-12-mobile {
@@ -1749,6 +1822,8 @@ input, select, textarea {
 /* Sections/Article */
 
 	section, article {
+		max-width: 800px;
+		margin: 0 auto;
 		margin-bottom: 3em;
 	}
 
@@ -1806,17 +1881,24 @@ input, select, textarea {
 		}
 
 		.image.members {
+			opacity:1;
 			width:100%;
+			max-width:300px;
+			align-items: center;
 			aspect-ratio: 1 / 1;
 		  	object-fit: cover;
 			overflow: hidden;
 		  	object-position: center;
 			display: block;
-
 			filter: grayscale(100%);
-
-
+			transition: 0.5s ease;
 		}
+
+		/* On hover — fade out */
+.image.members:hover img {
+  opacity: 0.3;        /* adjust how faded you want it */
+  filter: grayscale(0); /* optional: remove grayscale while fading */
+}
 
 		.image.left {
 			float: left;
@@ -1825,13 +1907,16 @@ input, select, textarea {
 
 		.image.centered {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 auto 2em ;
+			width: 100%;
+			max-width: 700px;
+		}
+		.image.logo {
+			display: block;
+			margin: 0 auto 2em ;
+			width: 100%;
 		}
 
-			.image.centered img {
-				margin: 0 auto;
-				width: auto;
-			}
 
 /* List */
 
@@ -2431,6 +2516,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 
 /* Banner */
 
 	#banner {
+		max-width:100%;
 		background: #fff;
 		text-align: center;
 		padding: 4.5em 0 4.5em 0;
@@ -2439,6 +2525,8 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 
 
 		#banner header > p {
 			margin-bottom: 0;
+			max-width: 1000px;
+			margin: auto
 		}
 
 /* Content */
@@ -2823,6 +2911,9 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 
 			.image.centered {
 				margin: 0 0 1em 0;
 			}
+
+		/* modalDialog  */
+
 
 		/* Actions */
 

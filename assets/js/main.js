@@ -43,6 +43,14 @@
 			alignment: 'center'
 		});
 
+// popups
+ 		$(".open").click(function (){
+                    $(".pop-outer").fadeIn("slow");
+                });
+		$(".close").click(function (){
+			$(".pop-outer").fadeOut("slow");
+		});
+
 	// Scrolly.
 		$('.scrolly').scrolly();
 

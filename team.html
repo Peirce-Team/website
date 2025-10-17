@@ -12,9 +12,6 @@ I will stylize the links later on.
 -->
 
 
-
-
-
 <!DOCTYPE HTML>
 <!--
 	Helios by HTML5 UP
@@ -25,7 +22,8 @@ I will stylize the links later on.
 <head>
     <title>No Sidebar - Helios by HTML5 UP</title>
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no"
+          name="viewport"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
     <noscript>
         <link href="assets/css/noscript.css" rel="stylesheet"/>
@@ -48,15 +46,28 @@ I will stylize the links later on.
 
                     </p>
                 </header>
+                <!--
+                <button class="open">clich</button>
+                <div style="display:none;" class="pop-outer">
+                    <div class="pop-inner">
+                        <button class="close">X</button>
+                        <p>lorem ipsum</p>
+                    </div>
+                </div>
+
+                -->
 
 
                 <section>
                     <header>
-                        <h3>Main Applicants</h3>
+                        <h3>Principal Investigators</h3>
                     </header>
                     <p>
-                        The “Peirce Interprets Peirce” project is powered by a distinguished team
-                        of interdisciplinary scholars, uniting expertise in semiotics, digital humanities, and
+                        The “Peirce Interprets Peirce” project is
+                        powered by a distinguished team
+                        of interdisciplinary scholars, uniting
+                        expertise in semiotics, digital humanities,
+                        and
                         computational linguistics.
                         <br><br>
                     </p>
@@ -65,38 +76,107 @@ I will stylize the links later on.
                                                 -->
                     <div class="row">
                         <article class="col-4 col-12-mobile special">
-                            <a class="image members"><img alt="" src="images/members/d_picca.jpg"/></a>
+                            <a a href="#dPicca" class="image members"><img alt=""
+                                                          src="images/members/d_picca.jpg"/></a>
                             <header>
-                                <h4>Davide Picca</h4>
-                                <h4>PI</h4>
+                                <h4>Davide Picca<br>PI</h4>
                             </header>
-                            <p>
-                                A leader in applying AI to cultural texts, Dr. Picca guides the project’s advanced text
-                                analysis and digital methodology.
-                            </p>
+
+
+                            <div class="modalDialog" id="dPicca">
+                                <div>
+                                    <a class="close" href="#close"
+                                       title="Close">X</a>
+
+                                    <p><strong>Davide Picca</strong>
+                                        is a professor and researcher
+                                        in digital humanities and
+                                        artificial intelligence at the
+                                        University of Lausanne. His
+                                        work focuses on the
+                                        intersection between language,
+                                        semiotics and AI, based on the
+                                        principle that linguistic
+                                        models are not mere computer
+                                        machines, but genuine tools
+                                        for interpreting culture and
+                                        thought. During his career, he
+                                        has been a visiting professor
+                                        at the University of Turin and
+                                        the Sorbonne in Paris, and is
+                                        currently a research fellow at
+                                        Harvard University's metaLAB,
+                                        where he studies the
+                                        relationship between digital
+                                        technologies and the
+                                        humanities. He is also a
+                                        scientific member of the
+                                        Umberto Eco Foundation, where
+                                        he coordinates aspects related
+                                        to technology and artificial
+                                        intelligence, with the aim of
+                                        improving archives, libraries
+                                        and collections through
+                                        advanced digital tools.</p>
+                                </div>
+                            </div>
+
                         </article>
                         <article class="col-4 col-12-mobile special">
                             <a class="image members"><img alt=""
-                                                                    src="images/members/i_mittelberg.jpg"/></a>
+                                                          src="images/members/i_mittelberg.jpg"/></a>
                             <header>
-                                <h4>Irene Mittenberg</h4>
-                                <h4>Co-PI</h4>
+                                <a href="#iMittelberg"><h4>Irene
+                                    Mittenberg<br>Co-PI</h4></a>
                             </header>
-                            <p>
-                                A renowned expert in cognitive semiotics, Professor Mittelberg shapes the project's
-                                theoretical framework and innovative visualization strategies.
-                            </p>
+                            <div class="modalDialog" id="iMittelberg">
+                                <div>
+                                    <a class="close" href="#close"
+                                       title="Close">X</a>
+                                    <p><strong>Irene
+                                        Mittelberg</strong> is
+                                        Professor of Linguistics and
+                                        Cognitive Semiotics at the
+                                        Institute for English,
+                                        American, and Romance Studies
+                                        of RWTH Aachen University,
+                                        where she directs the Centre
+                                        for Sign Language and Gesture
+                                        (SignGes) and founded the
+                                        Cognitive Semiotics Lab, a
+                                        gesture research lab equipped
+                                        with motion-capture
+                                        technology. She holds an M.A.
+                                        in French linguistics and art
+                                        history from Hamburg
+                                        University and a Ph.D. in
+                                        linguistics and cognitive
+                                        studies from Cornell
+                                        University.</p>
+                                </div>
+                            </div>
                         </article>
                         <article class="col-4 col-12-mobile special">
-                            <a class="image members"><img alt="" src="images/members/a_adamou.jpg"/></a>
+                            <a class="image members" href="#aAdamou"><img alt=""
+                                                                          src="images/members/a_adamou.jpg"/></a>
                             <header>
-                                <h4>Alessandro Adamou</h4>
-                                <h4>Co-PI</h4>
+                                <h4>Alessandro Adamou<br>Co -PI</h4>
                             </header>
-                            <p>
-                                Dr. Adamou spearheads the project's knowledge engineering, building the robust digital
-                                infrastructure that organizes Peirce's complex ideas.
-                            </p>
+                            <div class="modalDialog" id="aAdamou">
+                                <div>
+                                    <a class="close" href="#close"
+                                       title="Close">X</a>
+                                    <p><strong>Alessandro Adamou
+                                    </strong> spearheads the project's
+                                        knowledge engineering,
+                                        building the
+                                        robust digital
+                                        infrastructure that organizes
+                                        Peirce's
+                                        complex ideas.</p>
+                                </div>
+                            </div>
+
                         </article>
                     </div>
                 </section>
@@ -107,12 +187,18 @@ I will stylize the links later on.
                         <h3>Research Team</h3>
                     </header>
                     <p>
-                        Beyond the core leadership, a diverse team of postdoctoral researchers, PhD candidates, and
-                        technical specialists are actively engaged in every facet of the project, from meticulous
+                        Beyond the core leadership, a diverse team of
+                        postdoctoral researchers, PhD candidates, and
+                        technical specialists are actively engaged in
+                        every facet of the project, from meticulous
                         manuscript
-                        transcription to the development of interactive digital tools. Their collective efforts are
+                        transcription to the development of
+                        interactive digital tools. Their collective
+                        efforts are
                         crucial
-                        to transforming Peirce's historical archives into dynamic, accessible resources for the 21st
+                        to transforming Peirce's historical archives
+                        into dynamic, accessible resources for the
+                        21st
                         century.
                     </p>
                     <!--
@@ -120,44 +206,86 @@ I will stylize the links later on.
                                                 -->
                     <div class="row">
                         <article class="col-3 col-12-mobile special">
-                            <a class="image members"><img alt="" src="images/members/s_feil.jpg"/></a>
+                            <a class="image members" href="#sFeil"><img alt=""
+                                                                        src="images/members/s_feil.jpg"/></a>
                             <header>
-                                <h4>Sebastian Feil</h4>
-                                <h4>PostDoc</h4>
+                                <h4>Sebastian Feil<br>PostDoc</h4>
                             </header>
-                            <p>
-                                feil description
-                            </p>
+                            <div class="modalDialog" id="sFeil">
+                                <div>
+                                    <a class="close" href="#close"
+                                       title="Close">X</a>
+                                    <p><strong>Sebastian Feil
+                                    </strong> is a post-doctoral researcher at RWTH Aachen with the department of English Studies in the research area
+                                        Linguistics and Cognitive Semiotics. He hold a Master’s degree in Comparative Literature, American Literature
+                                        and Philosophy from the University of Augsburg and has completed a PhD in Philosophy with Prof. Helmut Pape at
+                                        the University of Hildesheim on the concept of the preconceptual with particular attention to American
+                                        Pragmatism and the concept of habit in the epistemology and semiotics of Charles Sanders Peirce. He has worked
+                                        on the relationship of Peirce’s philosophy and semiotics and contemporary continental philosophy (Gadamer,
+                                        Foucault, Blumenberg) and Peirce’s concept of abduction. Sebastian Feil serves as a member of the Advisory
+                                        Committee of the German Semiotics Society (DGS).<a class="icon solid fa-home"
+                                   href="https://www.anglistik.rwth-aachen.de/cms/anglistik/anglistik-amerikanistik/natural-media/~bkcdvm/sebastian-feil-dr-phil/?allou=1&lidx=1"><span
+                                        class="label">seb homepage</span></a><a class="icon brands fa-researchgate"
+                                   href="https://www.researchgate.net/profile/Sebastian-Feil"><span
+                                        class="label">seb researchgate</span></a></p>
+                                </div>
+                            </div>
                         </article>
                         <article class="col-3 col-12-mobile special">
-                            <a class="image members"><img alt="" src="images/members/h_kim.jpg"/></a>
+                            <a class="image members" href="#hKim"><img alt=""
+                                                                       src="images/members/h_kim.jpg"/></a>
                             <header>
-                                <h4>Haeeun Kim</h4>
-                                <h4>Doctoral Assistant</h4>
+                                <h4>Haeeun Kim<br>Doctoral Assistant</h4>
                             </header>
-                            <p>
-                                kim description
-                            </p>
+                            <div class="modalDialog" id="hKim">
+                                <div>
+                                    <a class="close" href="#close"
+                                       title="Close">X</a>
+                                    <p><strong>Haeeun Kim
+                                    </strong> is blah blah .</p>
+                                </div>
+                            </div>
                         </article>
                         <article class="col-3 col-12-mobile special">
-                            <a class="image members"><img alt="" src="images/members/c_t_pedretti.jpg"/></a>
+                            <a class="image members" href="#cTPedretti"><img alt=""
+                                                                             src="images/members/c_t_pedretti.jpg"/></a>
                             <header>
-                                <h4>Carlo Teo Pedretti</h4>
-                                <h4>PostDoc</h4>
+                                <h4>Carlo Teo Pedretti<br>Ph.D. Candidate</h4>
                             </header>
-                            <p>
-                                pedretti description
-                            </p>
+                            <div class="modalDialog" id="cTPedretti">
+                                <div>
+                                    <a class="close" href="#close"
+                                       title="Close">X</a>
+                                    <p><strong>Carlo Teo Pedretti</strong> is a PhD candidate
+                                        in Heritage Science at La Sapienza
+                                        University of Rome, and holds an MA in
+                                        Philosophical Sciences and Digital
+                                        Humanities from the University of
+                                        Bologna. His research applies semantic
+                                        web technologies to model scholarly
+                                        hermeneutical processes, focusing on
+                                        the act of annotation. Currently, he
+                                        uses visual semiotics and VLMs to
+                                        interpret diagrams in historical
+                                        manuscripts.
+                                    </p>
+                                </div>
+                            </div>
                         </article>
                         <article class="col-3 col-12-mobile special">
-                            <a class="image members"><img alt="" src="images/members/l_zangari.jpg"/></a>
+                            <a href="#lZangari" class="image members"><img alt=""
+                                                          src="images/members/l_zangari.jpg"/></a>
                             <header>
-                                <h4>Lorenzo Zangari</h4>
-                                <h4>PostDoc</h4>
+                                <h4>Lorenzo Zangari<br>PostDoc</h4>
                             </header>
-                            <p>
-                                zangari description
-                            </p>
+                            <div class="modalDialog" id="lZangari">
+                                <div>
+                                    <a class="close" href="#close"
+                                       title="Close">X</a>
+                                    <p><strong>Lorenzo Zangari</strong> earned his Ph.D. in Information and Communication Technologies in February 2025 at the Department of Computer Engineering, Modeling, Electronics, and Systems Engineering (DIMES), University of Calabria, Italy. He graduated magna cum laude in Computer Engineering in 2020. His research interests include the analysis and design of deep representation learning methods for complex networks and natural language processing (NLP). He is currently a postdoctoral researcher at the University of Lausanne (UNIL).
+                                    </p>
+                                </div>
+                            </div>
                         </article>
                     </div>
                 </section>
@@ -168,34 +296,67 @@ I will stylize the links later on.
                         <h3>Partners</h3>
                     </header>
                     <p>
-                         Our project is a testament to international academic partnership, bringing together leading
+                        Our project is a testament to international
+                        academic partnership, bringing together
+                        leading
                         institutions
                         to push the boundaries of digital scholarship:
                     </p>
 
                     <div class="row">
-                        <article class="col-3 col-12-mobile special"></article>
+                        <article
+                                class="col-3 col-12-mobile special"></article>
                         <article class="col-3 col-12-mobile special">
-                            <a class="image members"><img alt="" src="images/members/d_rodighiero.jpg"/></a>
+                            <a href="#dRodighiero" class="image members"><img alt=""
+                                                          src="images/members/d_rodighiero.jpg"/></a>
                             <header>
                                 <h4>Dario Rodighiero</h4>
-                                <h4>Partner</h4>
                             </header>
-                            <p>
-                                rodighiero description
-                            </p>
+                            <div class="modalDialog" id="dRodighiero">
+                                <div>
+                                    <a class="close" href="#close"
+                                       title="Close">X</a>
+                                    <p><strong>Dario Rodighiero</strong> bridges design, data,
+                                and the humanities, developing
+                                innovative methods for visualizing
+                                knowledge. His work connects digital
+                                archives with cultural heritage,
+                                shaping the project’s visualization
+                                and interaction design.<a class="icon solid fa-home"
+                                   href="https://dariorodighiero.com"><span
+                                        class="label">dario homepage</span></a>
+                                    </p>
+                                </div>
+                            </div>
+
                         </article>
                         <article class="col-3 col-12-mobile special">
-                            <a class="image members"><img alt="" src="images/members/j_schnapp.jpg"/></a>
+                            <a href="#jSchnapp" class="image members"><img alt=""
+                                                          src="images/members/j_schnapp.jpg"/></a>
                             <header>
                                 <h4>Jeffrey Schnapp</h4>
-                                <h4>Partner</h4>
+
                             </header>
-                            <p>
-                                schnapp description
-                            </p>
+                            <div class="modalDialog" id="jSchnapp">
+                                <div>
+                                    <a class="close" href="#close"
+                                       title="Close">X</a>
+                                    <p>Professor <strong>Jeffrey Schnapp</strong> , a pioneer in
+                                digital humanities and knowledge
+                                design, brings decades of experience
+                                in reimagining how culture and
+                                technology intersect. He guides the
+                                project’s conceptual direction and
+                                public-facing engagement.<a class="icon solid fa-home"
+                                   href="https://jeffreyschnapp.com"><span
+                                        class="label">jeffrey homepage</span></a>
+                                    </p>
+                                </div>
+                            </div>
+
                         </article>
-                        <article class="col-3 col-12-mobile special"></article>
+                        <article
+                                class="col-3 col-12-mobile special"></article>
                     </div>
                 </section>
 
@@ -204,56 +365,60 @@ I will stylize the links later on.
                         <h3>Advisory Committee</h3>
                     </header>
                     <p>
-                         Advisory committee members
+                        Advisory committee members
                     </p>
 
-                            <p>
-                                Ac description
-                            </p>
-
-
-                    </div>
-                </section>
-
-
-                <section>
                     <p>
-
+                        Ac description
                     </p>
-                    <!--
-                                                <a href="#" class="image members"><img src="images/pic06.jpg" alt="" /></a>
-                                                -->
-                    <div class="row">
-                        <article class="col-2 col-12-mobile special">
-                            <a class="image center"><img alt="" src="images/logos/unil.jpg"/></a>
-                        </article>
-                        <article class="col-2 col-12-mobile special">
-                            <a class="image center"><img alt="" src="images/logos/RWTHA.png"/></a>
-                        </article>
-                        <article class="col-2 col-12-mobile special">
-                            <a class="image center"><img alt="" src="images/logos/BHMPI.jpg"/></a>
-                        </article>
-                        <article class="col-2 col-12-mobile special">
-                            <a class="image center"><img alt="" src="images/logos/rug.jpg"/></a>
-                        </article>
-                        <article class="col-2 col-12-mobile special">
-                            <a class="image center"><img alt="" src="images/logos/metalab.jpg"/></a>
-                        </article>
-                    </div>
-                </section>
 
-
-
-                <hr/>
 
         </div>
+        </section>
 
-        <!-- Footer -->
-        <div data-include="footer.html"></div>
+
+        <section>
+            <p>
+
+            </p>
+            <!--
+                                        <a href="#" class="image members"><img src="images/pic06.jpg" alt="" /></a>
+                                        -->
+            <div class="row">
+                <article class="col-2 ">
+                    <a class="image logo"><img alt=""
+                                               src="images/logos/unil.jpg"/></a>
+                </article>
+                <article class="col-2 ">
+                    <a class="image logo"><img alt=""
+                                               src="images/logos/RWTHA.png"/></a>
+                </article>
+                <article class="col-2 ">
+                    <a class="image logo"><img alt=""
+                                               src="images/logos/BHMPI.jpg"/></a>
+                </article>
+                <article class="col-2">
+                    <a class="image logo"><img alt=""
+                                               src="images/logos/rug.jpg"/></a>
+                </article>
+                <article class="col-2">
+                    <a class="image logo"><img alt=""
+                                               src="images/logos/metalab.jpg"/></a>
+                </article>
+            </div>
+        </section>
+
+
+        <hr/>
 
     </div>
 
-    <!-- Scripts -->
-    <script defer src="assets/js/partials.js"></script>
+    <!-- Footer -->
+    <div data-include="footer.html"></div>
+
+</div>
+
+<!-- Scripts -->
+<script defer src="assets/js/partials.js"></script>
 </body>
 </html>
