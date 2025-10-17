@@ -101,9 +101,9 @@ input, select, textarea {
 		backdrop-filter: blur(3px);
         z-index: 99999;
         opacity:0;
-        -webkit-transition: opacity 4000ms ease-in;
-        -moz-transition: opacity 4000ms ease-in;
-        transition: opacity 4000ms ease-in;
+        -webkit-transition: opacity 40ms ease-in;
+        -moz-transition: opacity 40ms ease-in;
+        transition: opacity 40ms ease-in;
         pointer-events: none;
     }
 
@@ -1891,7 +1891,7 @@ input, select, textarea {
 		  	object-position: center;
 			display: block;
 			filter: grayscale(100%);
-			transition: 0.5s ease;
+			transition: 0.2s ease;
 		}
 
 		/* On hover — fade out */
