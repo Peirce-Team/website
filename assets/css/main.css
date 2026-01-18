@@ -1120,6 +1120,14 @@ textarea {
 	margin: 0 0 2em 0;
 }
 
+.image.fit.partner-logo img {
+	width: auto;
+	max-width: 100%;
+	max-height: 80px;
+	margin: 0 auto;
+}
+
+
 .image.centered img {
 	margin: 0 auto;
 	width: auto;
