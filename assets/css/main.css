@@ -2193,6 +2193,13 @@ body {
 	background: #f5f6f7;
 }
 
+#publications {
+	background: url("images/overlay.png"), #39454b;
+	background-size: 256px 256px, cover;
+	background-attachment: fixed, fixed;
+	background-position: top left, center center;
+}
+
 #publications .content {
 	width: 100% !important;
 	max-width: 100% !important;
