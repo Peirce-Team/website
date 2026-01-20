@@ -2193,6 +2193,11 @@ body {
 	background: #f5f6f7;
 }
 
+#publications .content {
+	width: 80% !important;
+	max-width: 100% !important;
+}
+
 .main.dark {
 	color: #ffffff;
 }
