@@ -1,0 +1,15 @@
+institutions:
+  - name: University of Lausanne
+    logo: images/logos/unil.jpg
+
+  - name: RWTH Aachen University
+    logo: images/logos/RWTHA.png
+
+  - name: Bibliotheca Hertziana – Max Planck Institute
+    logo: images/logos/BHMPI.jpg
+
+  - name: University of Groningen
+    logo: images/logos/rug.jpg
+
+  - name: MetaLab at Harvard
+    logo: images/logos/metalab.jpg

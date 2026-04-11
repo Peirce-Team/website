@@ -1,351 +1,184 @@
-<!DOCTYPE HTML>
-<!--
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+layout: default
+title: Peirce Interprets Peirce
+---
 
-<head>
-	<title>Peirce Interprets Peirce</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-</head>
+<!-- Hero -->
+<section id="hero">
+  <canvas id="graph-canvas"></canvas>
+  <div class="hero-content">
+    <h1>Peirce<br>Interprets<br>Peirce</h1>
+    <p class="hero-sub">A digital humanities project on<br>Charles S. Peirce's manuscripts</p>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="5" y1="0" x2="5" y2="14" stroke="currentColor" stroke-width="1.2"/>
+      <polyline points="1,10 5,14 9,10" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    </svg>
+  </div>
+</section>
 
-<body class="is-preload">
+<!-- About -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <span class="section-label">01 — About</span>
+        <h2 class="section-title">Why Peirce,<br>Why Now</h2>
+      </div>
+      <div class="about-body">
+        <p>Charles S. Peirce left a vast archive of manuscripts on semiotics, logic, and the philosophy of science — much of it still underexplored.</p>
+        <p>Advances in OCR/HTR, NLP, and knowledge graphs now make it possible to revisit this archive and surface new insights into Peirce's theory of signs and his universal categories.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<!-- Header -->
-	<header id="header">
-		<h1>Peirce Interprets Peirce</h1>
-		<nav>
-			<ul>
-				<li><a href="#intro">Intro</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#objectives">Objectives</a></li>
-				<li><a href="#team">Team</a></li>
-				<li><a href="#partners">Partners</a></li>
-				<li><a href="#publications">Publications</a></li>
-			</ul>
-		</nav>
-	</header>
+<!-- Objectives -->
+<section id="objectives" class="section">
+  <div class="section-inner">
+    <div class="objectives-grid">
+      <div>
+        <span class="section-label">02 — Objectives</span>
+        <h2 class="section-title">How We Work</h2>
+      </div>
+      <div class="objectives-body">
+        <p class="objectives-intro">We aim to build a curated, high-fidelity digital corpus of Peirce's manuscripts and analyze linguistic, conceptual, and diagrammatic patterns using AI-driven methods.</p>
+        <ul class="methods-list">
+          <li>
+            <span class="method-name">Transcription</span>
+            <span class="method-desc">Using OCR/HTR to produce accurate digital texts from Peirce's handwritten pages.</span>
+          </li>
+          <li>
+            <span class="method-name">Analysis</span>
+            <span class="method-desc">Applying NLP and LLMs to detect themes and semiotic structures across the corpus.</span>
+          </li>
+          <li>
+            <span class="method-name">Knowledge Graph</span>
+            <span class="method-desc">Building a knowledge graph to cross-reference Peirce's concepts and trace their evolution.</span>
+          </li>
+          <li>
+            <span class="method-name">Visualization</span>
+            <span class="method-desc">Designing interactive tools to make the archive accessible to researchers and the public.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<!-- Intro -->
-	<section id="intro" class="main style1 dark fullscreen">
-		<div class="content">
-			<header>
-				<h2>Peirce Interprets Peirce</h2>
-			</header>
-			<p>A collaborative digital humanities project dedicated to exploring the original manuscripts of Charles S.
-				Peirce. <br />
-				By combining rigorous semiotic scholarship with state-of-the-art computational methods, we aim to make
-				Peirce’s intellectual legacy more accessible, analyzable, and engaging for scholars and the wider
-				public.</p>
-			<footer>
-				<a href="#about" class="button style2 down">Discover</a>
-			</footer>
-		</div>
-	</section>
+<!-- Team -->
+<section id="team" class="section">
+  <div class="section-inner">
+    <span class="section-label">03 — Team</span>
+    <h2 class="section-title">Who We Are</h2>
 
-	<!-- About -->
-	<section id="about" class="main style2 right dark fullscreen">
-		<div class="content box style2">
-			<header>
-				<h2>Why Peirce, Why Now</h2>
-			</header>
-			<p>Charles S. Peirce, a foundational thinker in semiotics, logic, and the philosophy of science, left a vast
-				and intricate archive of manuscripts. Many remain underexplored due to their scope and complexity.</p>
-			<p>Today’s advances in OCR/HTR, NLP, and knowledge graph technologies offer a timely opportunity to revisit
-				this archive and reveal new insights into Peirce’s concepts—such as icons, indexes, symbols, and the
-				universal categories of Firstness, Secondness, and Thirdness.</p>
-		</div>
-		<a href="#objectives" class="button style2 down anchored">Next</a>
-	</section>
+    <div class="team-subsection">
+      <h3 class="team-subtitle">Principal Investigators</h3>
+      <div class="team-grid">
+        {% for member in site.data.team.principal_investigators %}
+        <div class="team-member" onclick="openBio('{{ member.id }}')">
+          <div class="member-photo">
+            <img src="{{ member.image }}" alt="{{ member.name }}">
+          </div>
+          <h4 class="member-name">{{ member.name }}</h4>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
 
-	<!-- Objectives -->
-	<section id="objectives" class="main style2 left dark fullscreen">
-		<div class="content box style2">
-			<header>
-				<h2>Objectives & Methods</h2>
-			</header>
-			<p>We aim to build a curated, high-fidelity digital corpus of Peirce’s manuscripts and analyze linguistic,
-				conceptual, and diagrammatic patterns using AI-driven methods.</p>
-			<p><strong>Approach:</strong>
-			<ul style="text-align: left;">
-				<li><strong>Transcription:</strong> Advanced OCR/HTR for accurate digital texts.</li>
-				<li><strong>Analysis:</strong> NLP and LLMs to detect themes and semiotic structures.</li>
-				<li><strong>Knowledge Graph:</strong> Structuring insights for cross-referencing.</li>
-				<li><strong>Visualization:</strong> Interactive visual summaries.</li>
-			</ul>
-			</p>
-		</div>
-		<a href="#team" class="button style2 down anchored">Next</a>
-	</section>
+    <div class="team-subsection">
+      <h3 class="team-subtitle">Research Team</h3>
+      <div class="team-grid">
+        {% for member in site.data.team.research_team %}
+        <div class="team-member" onclick="openBio('{{ member.id }}')">
+          <div class="member-photo">
+            <img src="{{ member.image }}" alt="{{ member.name }}">
+          </div>
+          <h4 class="member-name">{{ member.name }}</h4>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
 
-	<!-- Team -->
-	<section id="team" class="main style3 primary">
-		<div class="content">
-			<header>
-				<h2>Our Team</h2>
-				<p>The “Peirce Interprets Peirce” project is powered by a distinguished team of interdisciplinary
-					scholars.</p>
-			</header>
+    <div class="team-subsection">
+      <h3 class="team-subtitle">Research Partners</h3>
+      <div class="team-grid">
+        {% for member in site.data.team.research_partners %}
+        <div class="team-member" onclick="openBio('{{ member.id }}')">
+          <div class="member-photo">
+            <img src="{{ member.image }}" alt="{{ member.name }}">
+          </div>
+          <h4 class="member-name">{{ member.name }}</h4>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
 
-			<h3>Principal Investigators</h3>
-			<!-- Gallery -->
-			<div class="gallery">
-				<article class="from-left">
-					<a href="#dPicca" class="image fit no-scrolly"><img src="images/members/d_picca.jpg"
-							title="PI Davide Picca" alt="" /></a>
-					<h4 class="member-name">PI Davide Picca</h4>
-				</article>
-				<article class="from-right">
-					<a href="#iMittelberg" class="image fit no-scrolly"><img src="images/members/i_mittelberg.jpg"
-							title="Co-PI Irene Mittelberg † 2025" alt="" /></a>
-					<h4 class="member-name">Co-PI Irene Mittelberg † 2025</h4>
-				</article>
-				<article class="from-left">
-					<a href="#aAdamou" class="image fit no-scrolly"><img src="images/members/a_adamou.jpg"
-							title="Co-PI Alessandro Adamou" alt="" /></a>
-					<h4 class="member-name">Co-PI Alessandro Adamou</h4>
-				</article>
-			</div>
+<!-- Partners -->
+<section id="partners" class="section">
+  <div class="section-inner">
+    <span class="section-label">04 — Partners</span>
+    <h2 class="section-title">Who Supports Us</h2>
 
-			<br />
-			<h3>Research Team</h3>
-			<div class="gallery">
-				<article class="from-right">
-					<a href="#sFeil" class="image fit no-scrolly"><img src="images/members/s_feil.jpg"
-							title="Sebastian Feil" alt="" /></a>
-					<h4 class="member-name">Sebastian Feil</h4>
-				</article>
-				<article class="from-left">
-					<a href="#cTPedretti" class="image fit no-scrolly"><img src="images/members/c_t_pedretti.jpg"
-							title="Carlo Teo Pedretti" alt="" /></a>
-					<h4 class="member-name">Carlo Teo Pedretti</h4>
-				</article>
-				<article class="from-right">
-					<a href="#lZangari" class="image fit no-scrolly"><img src="images/members/l_zangari.jpg"
-							title="Lorenzo Zangari" alt="" /></a>
-					<h4 class="member-name">Lorenzo Zangari</h4>
-				</article>
-			</div>
+    <div class="partners-subsection">
+      <h3 class="partners-subtitle">Partner Institutions</h3>
+      <div class="logos-grid">
+        {% for inst in site.data.partners.institutions %}
+        <div class="logo-item">
+          <img src="{{ inst.logo }}" alt="{{ inst.name }}">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
 
-		</div>
-		<a href="#partners" class="button style2 down anchored">Next</a>
-	</section>
+    <div class="partners-subsection">
+      <h3 class="partners-subtitle">Advisory Committee</h3>
+      <ul class="advisory-list">
+        {% for advisor in site.data.advisory %}
+        <li>
+          <span class="advisory-name">{{ advisor.name }}</span>
+          <span class="advisory-institution">{{ advisor.institution }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
 
-	<!-- Partners -->
-	<section id="partners" class="main style3 secondary">
-		<div class="content">
-			<header>
-				<h2>Partners & Advisory</h2>
-			</header>
-			<div class="box">
-				<h3>Research Partners</h3>
-				<!-- Gallery for Partners -->
-				<div class="gallery">
-					<article class="from-left">
-						<a href="#dRodighiero" class="image fit no-scrolly"><img src="images/members/d_rodighiero.jpg"
-								title="Dario Rodighiero" alt="" /></a>
-						<h4 class="member-name">Dario Rodighiero</h4>
-					</article>
-					<article class="from-right">
-						<a href="#jSchnapp" class="image fit no-scrolly"><img src="images/members/j_schnapp.jpg"
-								title="Jeffrey Schnapp" alt="" /></a>
-						<h4 class="member-name">Jeffrey Schnapp</h4>
-					</article>
-				</div>
-				<br />
+<!-- Publications -->
+<section id="publications" class="section">
+  <div class="section-inner">
+    <span class="section-label">05 — Output</span>
+    <h2 class="section-title">Publications</h2>
+    <ul class="publications-list">
+      {% for pub in site.data.publications %}
+      <li class="publication-item">
+        <span class="pub-year">{{ pub.year }}</span>
+        <div>
+          <p class="pub-authors">{{ pub.authors }}</p>
+          <p class="pub-title"><em>{{ pub.title }}</em></p>
+          <p class="pub-venue">{{ pub.venue }}</p>
+          <a href="{{ pub.doi }}" target="_blank" rel="noopener" class="pub-doi">DOI →</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
 
-				<h3>Partner Institutions</h3>
-				<div class="row 50% uniform">
-					<div class="col-2"><span class="image fit partner-logo"><img src="images/logos/unil.jpg"
-								alt="UNIL" /></span>
-					</div>
-					<div class="col-2"><span class="image fit partner-logo"><img src="images/logos/RWTHA.png"
-								alt="RWTH" /></span>
-					</div>
-					<div class="col-2"><span class="image fit partner-logo"><img src="images/logos/BHMPI.jpg"
-								alt="BHMPI" /></span>
-					</div>
-					<div class="col-2"><span class="image fit partner-logo"><img src="images/logos/rug.jpg"
-								alt="RUG" /></span></div>
-					<div class="col-2"><span class="image fit partner-logo"><img src="images/logos/metalab.jpg"
-								alt="MetaLab" /></span></div>
-				</div>
-				<hr />
-				<h3>Advisory Committee</h3>
-				<ul class="alt" style="text-align:left;">
-					<li>Prof. Giovanni Maddalena — Università del Molise</li>
-					<li>Prof. Riccardo Fedriga — Università di Bologna</li>
-					<li>Prof. Francesco Bellucci — Università di Bologna</li>
-					<li>Prof. Frederik Stjernfelt — Aalborg University</li>
-					<li>Prof. Maria Giulia Dondero — Université de Liège</li>
-					<li>Prof. Jeffrey F. Hamburger — Harvard University</li>
-					<li>Prof. Rocco Monti — University of Rome 3</li>
-					<li>Prof. Ahti-Veikko Juhani Pietarinen — Hong Kong Baptist University</li>
-					<li>Prof. Alberto Romele — IRMÉCCEN, Sorbonne Nouvelle</li>
-					<li>Dr. Elize Bisanz — Texas Tech University</li>
-					<li>Dr. Tiago da Costa e Silva — Independent Researcher</li>
-					<li>Prof. Cornelis de Waal — Indiana University</li>
-					<li>Prof. Tullio Viola — University of Maastricht</li>
-					<li>Prof. J.K. (Joshua) Schäuble — University of Groningen</li>
-				</ul>
-			</div>
-		</div>
-		<a href="#publications" class="button style2 down anchored">Next</a>
-	</section>
-
-	<!-- Publications -->
-	<section id="publications" class="main style1 dark fullscreen">
-		<div class="content">
-			<header>
-				<h2>Publications</h2>
-			</header>
-			<ul style="text-align: left;">
-				<li>Picca, D., Schnyder, A., Kostina, E., Adamou, A., Rodighiero, D., & Schnapp, J. (2023).
-					<em>Orchestrating Cultural Heritage: Exploring the Automated Analysis and Organization of Charles S.
-						Peirce’s PAP Manuscript.</em> Proceedings of the 34th ACM Conference on Hypertext and Social
-					Media. <a href="https://doi.org/10.1145/3603163.3609066" target="_blank">[DOI]</a>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-	<!-- Footer -->
-	<footer id="footer">
-
-		<!-- Icons -->
-		<ul class="icons">
-			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-			<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-			<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-		</ul>
-
-		<!-- Menu -->
-		<ul class="menu">
-			<li>&copy; Untitled</li>
-			<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-		</ul>
-
-	</footer>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.poptrox.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-	<!-- Modals -->
-	<div id="dPicca" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<p><strong>Davide Picca</strong> is a professor and researcher in digital humanities and artificial
-				intelligence at the University of Lausanne. His work focuses on the intersection between language,
-				semiotics and AI, based on the principle that linguistic models are not mere computer machines, but
-				genuine tools for interpreting culture and thought. During his career, he has been a visiting professor
-				at the University of Turin and the Sorbonne in Paris, and is currently a research fellow at Harvard
-				University's metaLAB, where he studies the relationship between digital technologies and the humanities.
-				He is also a scientific member of the Umberto Eco Foundation, where he coordinates aspects related to
-				technology and artificial intelligence, with the aim of improving archives, libraries and collections
-				through advanced digital tools.</p>
-		</div>
-	</div>
-	<div id="iMittelberg" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<p><strong>Irene Mittelberg</strong> was a professor and internationally recognised expert in cognitive
-				linguistics and cognitive semiotics at the Institute of English Studies at RWTH Aachen University. Among
-				her many endeavours, she led the DFG-funded research project “NeuroPeirce: Gesture as test ground for
-				the social neuroscience of Peirce’s Universal Categories“, where she developed and helped implement an
-				adapted scheme of Peirce’s universal categories for coding and analysing both naturalistic social
-				interaction and the corresponding brain-imaging data. Irene brought to the team an extensive knowledge
-				of semiotic theories and concepts and their relevance for empirical applications. She was well-connected
-				to the world of Peirce studies and semiotics through her many affiliations to and advisory roles in
-				academic societies such as the German Society for Semiotics. She is greatly missed by all who had the
-				privilege of working with her.</p>
-		</div>
-	</div>
-	<div id="aAdamou" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<p><strong>Alessandro Adamou</strong> is Digital Humanities Scientist at the Bibliotheca Hertziana - Max
-				Planck Institute for Art History. His work focuses on applications of Knowledge graphs and the Semantic
-				Web to understand and tackle the research questions of digital humanists. His other core research
-				interests revolve around the structuring and knowledge organization of intangible aspects of cultural
-				heritage, including ways to model aesthetic experience, symbols in tradition, and hermeneutics. With the
-				Royal College of Music, Alessandro has developed LED, the first crowdsourced linked dataset on evidence
-				of listening experiences; he has also contributed knowledge models of reading experience for the READ-IT
-				project. At the Bibliotheca Hertziana, Alessandro is in charge of the knowledge graph infrastructure of
-				the institutional holdings in art history, including their usage in machine learning and generative AI
-				applications. He was PMC member of the project Stanbol at the Apache Software Foundation and organizer
-				of the WHiSe workshop series, and currently serves in the editorial board of Applied Ontology and, since
-				2023, as chair at the ACM Hypertext conference.</p>
-		</div>
-	</div>
-	<div id="sFeil" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<p><strong>Sebastian Feil</strong> is a post-doctoral researcher at RWTH Aachen with the department of
-				English Studies in the research area Linguistics and Cognitive Semiotics. He hold a Master’s degree in
-				Comparative Literature, American Literature and Philosophy from the University of Augsburg and has
-				completed a PhD in Philosophy with Prof. Helmut Pape at the University of Hildesheim on the concept of
-				the preconceptual with particular attention to American Pragmatism and the concept of habit in the
-				epistemology and semiotics of Charles Sanders Peirce. He has worked on the relationship of Peirce’s
-				philosophy and semiotics and contemporary continental philosophy (Gadamer, Foucault, Blumenberg) and
-				Peirce’s concept of abduction. Sebastian Feil serves as a member of the Advisory Committee of the German
-				Semiotics Society (DGS).</p>
-		</div>
-	</div>
-	<div id="cTPedretti" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<p><strong>Carlo Teo Pedretti</strong> is a PhD candidate in Heritage Science at La Sapienza University of
-				Rome, and holds an MA in Philosophical Sciences and Digital Humanities from the University of Bologna.
-				His research applies semantic web technologies to model scholarly hermeneutical processes, focusing on
-				the act of annotation. Currently, he uses visual semiotics and VLMs to interpret diagrams in historical
-				manuscripts.</p>
-		</div>
-	</div>
-	<div id="lZangari" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<p><strong>Lorenzo Zangari</strong> earned his Ph.D. in Information and Communication Technologies in
-				February 2025 at the Department of Computer Engineering, Modeling, Electronics, and Systems Engineering
-				(DIMES), University of Calabria, Italy. He graduated magna cum laude in Computer Engineering in 2020.
-				His research interests include the analysis and design of deep representation learning methods for
-				complex networks and natural language processing (NLP). He is currently a postdoctoral researcher at the
-				University of Lausanne (UNIL).</p>
-		</div>
-	</div>
-	<div id="dRodighiero" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<p><strong>Dario Rodighiero</strong> bridges design, data, and the humanities, developing innovative methods
-				for visualizing knowledge. His work connects digital archives with cultural heritage, shaping the
-				project’s visualization and interaction design.</p>
-		</div>
-	</div>
-	<div id="jSchnapp" class="modalDialog">
-		<div>
-			<a href="#close" title="Close" class="close">X</a>
-			<p>Professor <strong>Jeffrey Schnapp</strong>, a pioneer in digital humanities and knowledge design, brings
-				decades of experience in reimagining how culture and technology intersect. He guides the project’s
-				conceptual direction and public-facing engagement.</p>
-		</div>
-	</div>
-
-</body>
-
-</html>
+<!-- Bio Modals -->
+{% assign all_members = site.data.team.principal_investigators | concat: site.data.team.research_team | concat: site.data.team.research_partners %}
+{% for member in all_members %}
+<div class="bio-modal" id="modal-{{ member.id }}">
+  <div class="bio-modal-content">
+    <button class="bio-modal-close" onclick="closeBio()">Close ×</button>
+    <h3 class="bio-modal-name">{{ member.name }}</h3>
+    <span class="bio-modal-role">{{ member.role }}</span>
+    <p class="bio-modal-text">{{ member.bio }}</p>
+  </div>
+</div>
+{% endfor %}

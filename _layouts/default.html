@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+
+  <nav id="main-nav">
+    <a href="#hero" class="nav-logo">Peirce Interprets Peirce</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#objectives">Objectives</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#partners">Partners</a></li>
+      <li><a href="#publications">Output</a></li>
+    </ul>
+  </nav>
+
+  {{ content }}
+
+  <script src="{{ '/assets/js/graphs.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+</body>
+</html>
