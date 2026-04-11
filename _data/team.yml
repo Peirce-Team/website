@@ -1,0 +1,118 @@
+principal_investigators:
+  - id: dPicca
+    name: Davide Picca
+    role: Principal Investigator
+    image: images/members/d_picca.jpg
+    bio: >-
+      Davide Picca is a professor and researcher in digital humanities and artificial
+      intelligence at the University of Lausanne. His work focuses on the intersection
+      between language, semiotics and AI, based on the principle that linguistic models
+      are not mere computer machines, but genuine tools for interpreting culture and
+      thought. During his career, he has been a visiting professor at the University of
+      Turin and the Sorbonne in Paris, and is currently a research fellow at Harvard
+      University's metaLAB, where he studies the relationship between digital
+      technologies and the humanities. He is also a scientific member of the Umberto
+      Eco Foundation, where he coordinates aspects related to technology and artificial
+      intelligence, with the aim of improving archives, libraries and collections
+      through advanced digital tools.
+
+  - id: iMittelberg
+    name: Irene Mittelberg † 2025
+    role: Co-Principal Investigator
+    image: images/members/i_mittelberg.jpg
+    bio: >-
+      Irene Mittelberg was a professor and internationally recognised expert in
+      cognitive linguistics and cognitive semiotics at the Institute of English Studies
+      at RWTH Aachen University. Among her many endeavours, she led the DFG-funded
+      research project "NeuroPeirce: Gesture as test ground for the social neuroscience
+      of Peirce's Universal Categories", where she developed and helped implement an
+      adapted scheme of Peirce's universal categories for coding and analysing both
+      naturalistic social interaction and the corresponding brain-imaging data. Irene
+      brought to the team an extensive knowledge of semiotic theories and concepts and
+      their relevance for empirical applications. She was well-connected to the world of
+      Peirce studies and semiotics through her many affiliations to and advisory roles
+      in academic societies such as the German Society for Semiotics. She is greatly
+      missed by all who had the privilege of working with her.
+
+  - id: aAdamou
+    name: Alessandro Adamou
+    role: Co-Principal Investigator
+    image: images/members/a_adamou.jpg
+    bio: >-
+      Alessandro Adamou is Digital Humanities Scientist at the Bibliotheca Hertziana –
+      Max Planck Institute for Art History. His work focuses on applications of
+      knowledge graphs and the Semantic Web to understand and tackle the research
+      questions of digital humanists. His other core research interests revolve around
+      the structuring and knowledge organization of intangible aspects of cultural
+      heritage, including ways to model aesthetic experience, symbols in tradition, and
+      hermeneutics. With the Royal College of Music, Alessandro has developed LED, the
+      first crowdsourced linked dataset on evidence of listening experiences; he has
+      also contributed knowledge models of reading experience for the READ-IT project.
+      At the Bibliotheca Hertziana, Alessandro is in charge of the knowledge graph
+      infrastructure of the institutional holdings in art history, including their usage
+      in machine learning and generative AI applications. He was PMC member of the
+      project Stanbol at the Apache Software Foundation and organizer of the WHiSe
+      workshop series, and currently serves in the editorial board of Applied Ontology
+      and, since 2023, as chair at the ACM Hypertext conference.
+
+research_team:
+  - id: sFeil
+    name: Sebastian Feil
+    role: Post-doctoral Researcher
+    image: images/members/s_feil.jpg
+    bio: >-
+      Sebastian Feil is a post-doctoral researcher at RWTH Aachen with the department
+      of English Studies in the research area Linguistics and Cognitive Semiotics. He
+      holds a Master's degree in Comparative Literature, American Literature and
+      Philosophy from the University of Augsburg and has completed a PhD in Philosophy
+      with Prof. Helmut Pape at the University of Hildesheim on the concept of the
+      preconceptual with particular attention to American Pragmatism and the concept of
+      habit in the epistemology and semiotics of Charles Sanders Peirce. He has worked
+      on the relationship of Peirce's philosophy and semiotics and contemporary
+      continental philosophy (Gadamer, Foucault, Blumenberg) and Peirce's concept of
+      abduction. Sebastian Feil serves as a member of the Advisory Committee of the
+      German Semiotics Society (DGS).
+
+  - id: cTPedretti
+    name: Carlo Teo Pedretti
+    role: PhD Candidate
+    image: images/members/c_t_pedretti.jpg
+    bio: >-
+      Carlo Teo Pedretti is a PhD candidate in Heritage Science at La Sapienza
+      University of Rome, and holds an MA in Philosophical Sciences and Digital
+      Humanities from the University of Bologna. His research applies semantic web
+      technologies to model scholarly hermeneutical processes, focusing on the act of
+      annotation. Currently, he uses visual semiotics and VLMs to interpret diagrams in
+      historical manuscripts.
+
+  - id: lZangari
+    name: Lorenzo Zangari
+    role: Post-doctoral Researcher
+    image: images/members/l_zangari.jpg
+    bio: >-
+      Lorenzo Zangari earned his Ph.D. in Information and Communication Technologies
+      in February 2025 at the Department of Computer Engineering, Modeling,
+      Electronics, and Systems Engineering (DIMES), University of Calabria, Italy. He
+      graduated magna cum laude in Computer Engineering in 2020. His research interests
+      include the analysis and design of deep representation learning methods for
+      complex networks and natural language processing (NLP). He is currently a
+      postdoctoral researcher at the University of Lausanne (UNIL).
+
+research_partners:
+  - id: dRodighiero
+    name: Dario Rodighiero
+    role: Research Partner
+    image: images/members/d_rodighiero_groningen.jpg
+    bio: >-
+      Dario Rodighiero bridges design, data, and the humanities, developing innovative
+      methods for visualizing knowledge. His work connects digital archives with
+      cultural heritage, shaping the project's visualization and interaction design.
+
+  - id: jSchnapp
+    name: Jeffrey Schnapp
+    role: Research Partner
+    image: images/members/j_schnapp.jpg
+    bio: >-
+      Professor Jeffrey Schnapp, a pioneer in digital humanities and knowledge design,
+      brings decades of experience in reimagining how culture and technology intersect.
+      He guides the project's conceptual direction and public-facing engagement.

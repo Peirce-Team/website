@@ -1,0 +1,14 @@
+title: Peirce Interprets Peirce
+description: A collaborative digital humanities project dedicated to exploring the original manuscripts of Charles S. Peirce.
+baseurl: ""
+url: ""
+
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.txt
+  - LICENSE.txt
+  - _templates/
+  - archives/
