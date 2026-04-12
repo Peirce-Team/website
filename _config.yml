@@ -5,6 +5,9 @@ url: "https://peirce-team.github.io"
 
 permalink: pretty
 
+plugins:
+  - jekyll-sitemap
+
 exclude:
   - Gemfile
   - Gemfile.lock
