@@ -1,7 +1,7 @@
 title: Peirce Interprets Peirce
 description: A collaborative digital humanities project dedicated to exploring the original manuscripts of Charles S. Peirce.
-baseurl: ""
-url: ""
+baseurl: "/website"
+url: "https://peirce-team.github.io"
 
 permalink: pretty
 
