@@ -18,6 +18,25 @@ function closeBio() {
 
 document.addEventListener('DOMContentLoaded', function () {
 
+  // ---- Hamburger menu ----
+  var burger = document.getElementById('nav-burger');
+  var navLinks = document.getElementById('nav-links');
+
+  if (burger && navLinks) {
+    burger.addEventListener('click', function () {
+      var isOpen = navLinks.classList.toggle('open');
+      burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Close menu when a link is tapped
+    navLinks.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
   // Close modal on backdrop click
   document.querySelectorAll('.bio-modal').forEach(function (modal) {
     modal.addEventListener('click', function (e) {

@@ -60,13 +60,16 @@
 
   <nav id="main-nav">
     <a href="#hero" class="nav-logo">Peirce Interprets Peirce</a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#objectives">Objectives</a></li>
       <li><a href="#team">Team</a></li>
       <li><a href="#partners">Partners</a></li>
       <li><a href="#publications">Output</a></li>
     </ul>
+    <button class="nav-burger" id="nav-burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
 
   {{ content }}
