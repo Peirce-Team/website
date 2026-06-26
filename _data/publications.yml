@@ -1,7 +1,32 @@
+- year: 2026
+  authors: "Adamou, A., Feil, S., Picca, D., Pedretti, C. T., Rodighiero, D., & Zangari, L."
+  title: "Peirce Interprets Peirce: Digitization, Automation, and Interpretation in Charles Peirce's Manuscripts."
+  venue: "In C. Marras, A. Pergola, & G. Salice (Eds.), Digitale e public engagement: Pratiche e prospettive nelle digital humanities. Atti del XV convegno annuale AIUCD (pp. 485–493). AIUCD."
+  doi: "https://doi.org/10.6092/unibo/amsacta/8980"
+
+- year: 2026
+  authors: "Pedretti, C. T."
+  title: "Reconstructing Peirce's Trails of Thought: Multimodal Computational Analysis of Non-Linear Manuscript Composition."
+  venue: "In Proceedings of the 37th ACM Conference on Hypertext and Social Media (HT '26). Association for Computing Machinery."
+  forthcoming: true
+
+- year: 2026
+  authors: "Pedretti, C. T., Feil, S., Picca, D., & Rodighiero, D."
+  title: "Moving Pictures of Thought: Evaluating Vision-Language Models on Peirce's Existential Graphs."
+  venue: "Journal of Digital History. Advance online publication."
+  forthcoming: true
+
+- year: 2026
+  authors: "Picca, D."
+  title: "Not Minds, but Signs: Reframing LLMs through Semiotics."
+  venue: "arXiv:2505.17080v3."
+  doi: "https://arxiv.org/abs/2505.17080"
+  link_label: "arXiv"
+
 - year: 2025
   authors: "Pedretti, C. T., Picca, D., & Rodighiero, D."
   title: "Moving Pictures of Thought: Extracting Visual Knowledge in Charles S. Peirce's Manuscripts with Vision-Language Models."
-  venue: "In T. Arnold, M. Fantoli, & R. Ros (Eds.), Anthology of Computers and the Humanities, vol. 3."
+  venue: "In T. Arnold, M. Fantoli, & R. Ros (Eds.), Anthology of Computers and the Humanities, vol. 3 (pp. 1454–1467)."
   doi: "https://doi.org/10.63744/fkFGJ6wSzDPV"
 
 - year: 2023
