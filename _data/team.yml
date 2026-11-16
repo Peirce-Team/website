@@ -78,12 +78,22 @@ research_team:
     role: Post-doctoral Researcher
     image: images/members/c_t_pedretti.jpg
     bio: >-
-      Carlo Teo Pedretti is a PhD candidate in Heritage Science at La Sapienza
-      University of Rome, and holds an MA in Philosophical Sciences and Digital
-      Humanities from the University of Bologna. His research applies semantic web
-      technologies to model scholarly hermeneutical processes, focusing on the act of
-      annotation. Currently, he uses visual semiotics and VLMs to interpret diagrams in
-      historical manuscripts.
+      Carlo Teo Pedretti is a postdoctoral researcher in the Digital Humanities Lab of
+      the Bibliotheca Hertziana, where he works on the project Peirce Interprets
+      Peirce. His research lies between computer science, digital hermeneutics and
+      visual semiotics, and asks how interpretation operates in digital scholarly
+      practices. His earlier work dealt with semantic models of scholarly annotation
+      and with the representation of uncertain and contested information in cultural
+      heritage collections. He currently works on multimodal AI and on the extraction
+      of visual knowledge from non-linear manuscripts, in which writing is combined
+      with diagrams and other visual notations.
+
+      He has a background in philosophy and digital humanities, with degrees in
+      Philosophy and in Digital Humanities and Digital Knowledge from the University
+      of Bologna. He received his PhD in Heritage Science from Sapienza University of
+      Rome in 2026. His doctoral research, carried out between the University of
+      Bologna and Université Sorbonne Nouvelle, addressed annotation as a hermeneutic
+      practice in digital scholarship.
 
   - id: lZangari
     name: Lorenzo Zangari

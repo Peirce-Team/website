@@ -189,7 +189,11 @@ title: Peirce Interprets Peirce
     <button class="bio-modal-close" onclick="closeBio()">Close ×</button>
     <h3 class="bio-modal-name">{{ member.name }}</h3>
     <span class="bio-modal-role">{{ member.role }}</span>
-    <p class="bio-modal-text">{{ member.bio }}</p>
+    {% assign bio_paragraphs = member.bio | split: "
+" %}
+    {% for paragraph in bio_paragraphs %}
+    <p class="bio-modal-text">{{ paragraph }}</p>
+    {% endfor %}
   </div>
 </div>
 {% endfor %}

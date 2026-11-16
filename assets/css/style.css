@@ -455,6 +455,10 @@ a:hover {
   color: var(--ink-mid);
 }
 
+.bio-modal-text + .bio-modal-text {
+  margin-top: 1rem;
+}
+
 /* ---- Partners ---- */
 #partners {
   background: var(--cream-dark);
