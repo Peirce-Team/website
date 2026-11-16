@@ -143,7 +143,11 @@ title: Peirce Interprets Peirce
       <ul class="advisory-list">
         {% for advisor in site.data.advisory %}
         <li>
+          {% if advisor.url %}
+          <a href="{{ advisor.url }}" target="_blank" rel="noopener" class="advisory-name">{{ advisor.name }}</a>
+          {% else %}
           <span class="advisory-name">{{ advisor.name }}</span>
+          {% endif %}
           <span class="advisory-institution">{{ advisor.institution }}</span>
         </li>
         {% endfor %}

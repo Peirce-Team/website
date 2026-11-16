@@ -528,6 +528,16 @@ a:hover {
   line-height: 1.35;
 }
 
+a.advisory-name {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.advisory-name:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
 .advisory-institution {
   font-family: var(--font-mono);
   font-size: 0.68rem;
